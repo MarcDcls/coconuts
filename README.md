@@ -39,4 +39,5 @@ Write `SUBSYSTEM=="usb", ATTRS{idVendor}=="04d8", MODE="0666"`, save using Ctrl+
 sudo modprobe usbserial vendor=0x04d8 product=0x0053
 sudo slcand -o -c -s8 /dev/ttyUSB0 can0
 sudo ip link set can0 up
+sudo ip link set can0 txqueuelen 1000
 ```
