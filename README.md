@@ -32,3 +32,9 @@ sudo nano /etc/udev/rules.d
 ```
 
 Write `SUBSYSTEM=="usb", ATTRS{idVendor}=="04d8", MODE="0666"`, save using Ctrl+O and exit with Ctrl+X.
+
+--------------------------------------------
+
+sudo modprobe usbserial vendor=0x04d8 product=0x0053
+sudo slcand -o -c -s8 /dev/ttyUSB0 can0
+sudo ip link set can0 up
