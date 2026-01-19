@@ -1,7 +1,5 @@
 # Coconuts project
 
-TODO
-
 ## CAN setup
 
 To show SLCAN devices:
