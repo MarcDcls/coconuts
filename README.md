@@ -1,4 +1,9 @@
-# Coconuts project
+# CoconNuts Project
+
+[![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-yellow.svg)](LICENSE)
+
+TODO
 
 ## CAN setup
 
