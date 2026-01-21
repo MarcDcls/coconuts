@@ -8,5 +8,10 @@
         "ankle_passive": {"actuated": false},
         "ankle_joint": {"actuated": false},
         "upper_crank": {"actuated": false}
+    },
+
+    "ignore": {
+        "*" : "collision",
+        "benchmark_front_cover" : "all",
     }
 }

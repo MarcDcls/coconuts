@@ -19,12 +19,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_back_cover.stl"/>
-      </geometry>
-    </collision>
     <!-- Part bearing_cover_1 -->
     <visual>
       <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -35,12 +29,6 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_cover_1.stl"/>
-      </geometry>
-    </collision>
     <!-- Part bearing_6804_2rs -->
     <visual>
       <origin xyz="-0.000132957 -0.087 0.269" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -51,12 +39,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 -0.087 0.269" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
-      </geometry>
-    </collision>
     <!-- Part benchmark_outer_hip -->
     <visual>
       <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -67,12 +49,6 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_outer_hip.stl"/>
-      </geometry>
-    </collision>
     <!-- Part threaded_shaft__configuration_knee -->
     <visual>
       <origin xyz="-0.000132957 0.0141 0.269" rpy="-1.5708 5.55112e-17 -1.5708"/>
@@ -83,12 +59,6 @@
         <color rgba="0.647059 0.647059 0.647059 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0.0141 0.269" rpy="-1.5708 5.55112e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/threaded_shaft__configuration_knee.stl"/>
-      </geometry>
-    </collision>
     <!-- Part benchmark_inner_femur -->
     <visual>
       <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -99,12 +69,6 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_inner_femur.stl"/>
-      </geometry>
-    </collision>
     <!-- Part nut_m3 -->
     <visual>
       <origin xyz="-0.000132957 -0.0944 0.269" rpy="1.5708 -2.93216e-16 -1.5708"/>
@@ -115,12 +79,6 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 -0.0944 0.269" rpy="1.5708 -2.93216e-16 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m3.stl"/>
-      </geometry>
-    </collision>
     <!-- Part washer__configuration_m3 -->
     <visual>
       <origin xyz="-0.000132957 0.00950001 0.269" rpy="3.14159 -0 2.41519e-47"/>
@@ -131,12 +89,6 @@
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0.00950001 0.269" rpy="3.14159 -0 2.41519e-47"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-    </collision>
     <!-- Part rmd_x6 -->
     <visual>
       <origin xyz="-0.000132957 9.88509e-98 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -147,12 +99,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 9.88509e-98 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/rmd_x6.stl"/>
-      </geometry>
-    </collision>
     <!-- Part bearing_6804_2rs_2 -->
     <visual>
       <origin xyz="-0.000132957 0.00200001 0.269" rpy="-6.12323e-17 -5.23711e-65 -8.55285e-49"/>
@@ -163,12 +109,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0.00200001 0.269" rpy="-6.12323e-17 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
-      </geometry>
-    </collision>
     <!-- Part benchmark_outer_femur -->
     <visual>
       <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -179,12 +119,6 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_outer_femur.stl"/>
-      </geometry>
-    </collision>
     <!-- Part washer__configuration_m3_2 -->
     <visual>
       <origin xyz="-0.000132957 -0.0935 0.269" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -195,12 +129,6 @@
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 -0.0935 0.269" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-    </collision>
     <!-- Part rmd_x6_2 -->
     <visual>
       <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -211,12 +139,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/rmd_x6__2.stl"/>
-      </geometry>
-    </collision>
     <!-- Part aluminum_profile -->
     <visual>
       <origin xyz="0 0 0.42" rpy="0 -0 0"/>
@@ -227,28 +149,7 @@
         <color rgba="0.701961 0.701961 0.701961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 0.42" rpy="0 -0 0"/>
-      <geometry>
-        <mesh filename="package://assets/aluminum_profile.stl"/>
-      </geometry>
-    </collision>
     <!-- Part benchmark_front_cover -->
-    <visual>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_front_cover.stl"/>
-      </geometry>
-      <material name="benchmark_front_cover_material">
-        <color rgba="0.301961 0.301961 0.301961 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.000132957 0 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_front_cover.stl"/>
-      </geometry>
-    </collision>
     <!-- Part nut_m3_2 -->
     <visual>
       <origin xyz="-0.000132957 0.0104 0.269" rpy="-1.5708 3.54449e-16 1.5708"/>
@@ -259,12 +160,6 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 0.0104 0.269" rpy="-1.5708 3.54449e-16 1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m3.stl"/>
-      </geometry>
-    </collision>
     <!-- Part upper_femur_2 -->
     <visual>
       <origin xyz="-0.000132957 -3.84739e-98 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
@@ -275,19 +170,13 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.000132957 -3.84739e-98 0.42" rpy="-1.2326e-32 -5.23711e-65 -8.55285e-49"/>
-      <geometry>
-        <mesh filename="package://assets/upper_femur_2.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Link motor_pulley -->
   <link name="motor_pulley">
     <inertial>
-      <origin xyz="-6.05671e-16 4.59528e-05 -0.010399" rpy="0 0 0"/>
+      <origin xyz="-6.05622e-16 4.59528e-05 -0.010399" rpy="0 0 0"/>
       <mass value="0.0695532"/>
-      <inertia ixx="9.82762e-06" ixy="-2.78977e-21" ixz="-1.32647e-20" iyy="9.79581e-06" iyz="-2.8028e-08" izz="1.56643e-05"/>
+      <inertia ixx="9.82762e-06" ixy="-2.79453e-21" ixz="-1.32614e-20" iyy="9.79581e-06" iyz="-2.8028e-08" izz="1.56643e-05"/>
     </inertial>
     <!-- Part din_6325_3mm__configuration__12 -->
     <visual>
@@ -299,12 +188,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.01 -0.006" rpy="-1.5708 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_3mm__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12 -->
     <visual>
       <origin xyz="-0.01 0 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -315,12 +198,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.01 0 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_2 -->
     <visual>
       <origin xyz="-0.005 0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -331,12 +208,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.005 0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_3 -->
     <visual>
       <origin xyz="0.005 0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -347,12 +218,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.005 0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_4 -->
     <visual>
       <origin xyz="0.005 -0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -363,12 +228,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.005 -0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_5 -->
     <visual>
       <origin xyz="-0.005 -0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -379,12 +238,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.005 -0.00866025 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part motor_pulley -->
     <visual>
       <origin xyz="0 0 -0.0194" rpy="-1.5708 -1.5708 0"/>
@@ -395,12 +248,6 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.0194" rpy="-1.5708 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/motor_pulley.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_6 -->
     <visual>
       <origin xyz="0.01 0 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
@@ -411,12 +258,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.01 0 -0.0102" rpy="3.2068e-81 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Joint from aluminum_profile to motor_pulley -->
   <joint name="knee_motor" type="revolute">
@@ -426,32 +267,16 @@
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Link left_tibia -->
-  <link name="left_tibia">
+  <!-- Link inner_knee -->
+  <link name="inner_knee">
     <inertial>
-      <origin xyz="0.000199221 -0.0560065 -0.0375301" rpy="0 0 0"/>
-      <mass value="0.139207"/>
-      <inertia ixx="0.00066239" ixy="-1.30651e-06" ixz="1.00378e-06" iyy="0.000116019" iyz="7.99666e-05" izz="0.00056617"/>
+      <origin xyz="0.000201294 -0.0560108 -0.0375295" rpy="0 0 0"/>
+      <mass value="0.139137"/>
+      <inertia ixx="0.000662589" ixy="-1.37254e-06" ixz="1.04932e-06" iyy="0.000116119" iyz="8.00613e-05" izz="0.000566327"/>
     </inertial>
-    <!-- Part washer__configuration_m2_5 -->
-    <visual>
-      <origin xyz="0.0065 0.0204939 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.0065 0.0204939 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__10 -->
     <visual>
-      <origin xyz="0.0065 -0.0262059 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
+      <origin xyz="-0.0065 0.0204939 -0.0619" rpy="2.48073e-16 -6.12303e-17 3.33067e-16"/>
       <geometry>
         <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
       </geometry>
@@ -459,495 +284,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.0065 -0.0262059 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part ankle_bearing_cover -->
-    <visual>
-      <origin xyz="2.77827e-17 0.151 0.0292" rpy="1.5708 1.75935e-23 3.14159"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
-      </geometry>
-      <material name="ankle_bearing_cover_material">
-        <color rgba="0.262745 0.282353 0.301961 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="2.77827e-17 0.151 0.0292" rpy="1.5708 1.75935e-23 3.14159"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part inner_tibia -->
-    <visual>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/inner_tibia.stl"/>
-      </geometry>
-      <material name="inner_tibia_material">
-        <color rgba="0.917647 0.917647 0.917647 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/inner_tibia.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m3_3 -->
-    <visual>
-      <origin xyz="-3.33344e-14 -0.15 0.005" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-      <material name="washer__configuration_m3_3_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.33344e-14 -0.15 0.005" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part bearing_6802_2rs -->
-    <visual>
-      <origin xyz="-3.31401e-14 -0.15 -0.0015" rpy="-6.27276e-15 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
-      </geometry>
-      <material name="bearing_6802_2rs_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.31401e-14 -0.15 -0.0015" rpy="-6.27276e-15 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_2 -->
-    <visual>
-      <origin xyz="-1.67921e-14 -0.006 -0.007" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_2_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.67921e-14 -0.006 -0.007" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_3 -->
-    <visual>
-      <origin xyz="-3.46945e-14 -0.16575 -0.0573" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_3_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.46945e-14 -0.16575 -0.0573" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8 -->
-    <visual>
-      <origin xyz="-3.47222e-14 -0.16575 0.0046" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__8_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.47222e-14 -0.16575 0.0046" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_4 -->
-    <visual>
-      <origin xyz="-3.15581e-14 -0.13425 -0.0573" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_4_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.15581e-14 -0.13425 -0.0573" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m3_4 -->
-    <visual>
-      <origin xyz="-3.34176e-14 -0.15 -0.0593" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-      <material name="washer__configuration_m3_4_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.34176e-14 -0.15 -0.0593" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m3.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part bearing_6802_2rs_2 -->
-    <visual>
-      <origin xyz="-3.31124e-14 -0.15 -0.0528" rpy="8.04912e-15 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
-      </geometry>
-      <material name="bearing_6802_2rs_2_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.31124e-14 -0.15 -0.0528" rpy="8.04912e-15 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part bearing_6804_2rs_3 -->
-    <visual>
-      <origin xyz="-1.62925e-14 -5.55112e-16 -0.0538" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
-      </geometry>
-      <material name="bearing_6804_2rs_3_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.62925e-14 -5.55112e-16 -0.0538" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8_2 -->
-    <visual>
-      <origin xyz="-3.4972e-14 -0.16575 -0.0589" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__8_2_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.4972e-14 -0.16575 -0.0589" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__140 -->
-    <visual>
-      <origin xyz="-1.67366e-14 -0.006 -0.0086" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__140_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.67366e-14 -0.006 -0.0086" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part outer_knee_1 -->
-    <visual>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/outer_knee_1.stl"/>
-      </geometry>
-      <material name="outer_knee_1_material">
-        <color rgba="0.262745 0.282353 0.301961 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/outer_knee_1.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_5 -->
-    <visual>
-      <origin xyz="0.00344146 0.00491491 -0.0607" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_5_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.00344146 0.00491491 -0.0607" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_6 -->
-    <visual>
-      <origin xyz="-3.1558e-14 -0.13425 0.0036" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_6_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.1558e-14 -0.13425 0.0036" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__12 -->
-    <visual>
-      <origin xyz="0.0139256 -0.0097508 -0.0776" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__12.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__12_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.0139256 -0.0097508 -0.0776" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__12.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_7 -->
-    <visual>
-      <origin xyz="-0.0065 0.0204939 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_7_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.0065 0.0204939 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_8 -->
-    <visual>
-      <origin xyz="-3.46944e-14 -0.16575 0.003" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_8_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.46944e-14 -0.16575 0.003" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_9 -->
-    <visual>
-      <origin xyz="-0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_9_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_10 -->
-    <visual>
-      <origin xyz="0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_10_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part nut_m2_5 -->
-    <visual>
-      <origin xyz="0.0139256 -0.0097508 -0.0648" rpy="3.14159 -7.77156e-16 -0.610865"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-      <material name="nut_m2_5_material">
-        <color rgba="0.647059 0.647059 0.647059 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.0139256 -0.0097508 -0.0648" rpy="3.14159 -7.77156e-16 -0.610865"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part inner_knee -->
-    <visual>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/inner_knee.stl"/>
-      </geometry>
-      <material name="inner_knee_material">
-        <color rgba="0.262745 0.282353 0.301961 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/inner_knee.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_11 -->
-    <visual>
-      <origin xyz="-0.00344146 -0.00491491 -0.0607" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_11_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.00344146 -0.00491491 -0.0607" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8_3 -->
-    <visual>
-      <origin xyz="0.00344146 0.00491491 -0.0597" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__8_3_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.00344146 0.00491491 -0.0597" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part threaded_shaft__configuration_ankle -->
-    <visual>
-      <origin xyz="-3.33067e-14 -0.15 -0.0633" rpy="3.14159 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/threaded_shaft__configuration_ankle.stl"/>
-      </geometry>
-      <material name="threaded_shaft__configuration_ankle_material">
-        <color rgba="0.647059 0.647059 0.647059 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.33067e-14 -0.15 -0.0633" rpy="3.14159 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/threaded_shaft__configuration_ankle.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__10_2 -->
-    <visual>
-      <origin xyz="-0.0065 -0.0262059 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__10_2_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.0065 -0.0262059 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8_4 -->
-    <visual>
-      <origin xyz="-3.15581e-14 -0.13425 0.0046" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__8_4_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.15581e-14 -0.13425 0.0046" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_12 -->
-    <visual>
-      <origin xyz="-1.52933e-14 0.006 0.0026" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-      <material name="washer__configuration_m2_5_12_material">
-        <color rgba="0.6 0.6 0.6 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.52933e-14 0.006 0.0026" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__10_3 -->
-    <visual>
-      <origin xyz="-0.0065 0.0204939 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__10_3_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.0065 0.0204939 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
-      </geometry>
-    </collision>
     <!-- Part knee_pulley -->
     <visual>
-      <origin xyz="-1.64035e-14 -1.22125e-15 -0.065" rpy="-0.959931 1.5708 0"/>
+      <origin xyz="-1.8735e-16 1.11022e-16 -0.065" rpy="-0.959931 1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/knee_pulley.stl"/>
       </geometry>
@@ -955,159 +294,29 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-1.64035e-14 -1.22125e-15 -0.065" rpy="-0.959931 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/knee_pulley.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part washer__configuration_m2_5_13 -->
+    <!-- Part screw_m2_5__configuration__8 -->
     <visual>
-      <origin xyz="0.0139256 -0.0097508 -0.076" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
+      <origin xyz="0.00344146 0.00491491 -0.0597" rpy="3.14159 6.12303e-17 -4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5 -->
+    <visual>
+      <origin xyz="0 0.006 0.0026" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
       <geometry>
         <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
-      <material name="washer__configuration_m2_5_13_material">
+      <material name="washer__configuration_m2_5_material">
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.0139256 -0.0097508 -0.076" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part inner_knee_2 -->
-    <visual>
-      <origin xyz="-3.28626e-14 -0.151 0.0785" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/inner_knee.stl"/>
-      </geometry>
-      <material name="inner_knee_2_material">
-        <color rgba="0.262745 0.282353 0.301961 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.28626e-14 -0.151 0.0785" rpy="1.5708 -1.75935e-23 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/inner_knee.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part outer_tibia -->
-    <visual>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/outer_tibia.stl"/>
-      </geometry>
-      <material name="outer_tibia_material">
-        <color rgba="0.917647 0.917647 0.917647 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/outer_tibia.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part nut_m2_5_2 -->
-    <visual>
-      <origin xyz="-1.56541e-14 0.006 -0.01" rpy="-1.09686e-24 -6.93889e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-      <material name="nut_m2_5_2_material">
-        <color rgba="0.647059 0.647059 0.647059 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.56541e-14 0.006 -0.01" rpy="-1.09686e-24 -6.93889e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__140_2 -->
-    <visual>
-      <origin xyz="-1.52932e-14 0.006 0.0036" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__140_2_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.52932e-14 0.006 0.0036" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part nut_m2_5_3 -->
-    <visual>
-      <origin xyz="-1.6126e-14 -0.006 0.005" rpy="-3.14159 2.94903e-17 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-      <material name="nut_m2_5_3_material">
-        <color rgba="0.647059 0.647059 0.647059 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-1.6126e-14 -0.006 0.005" rpy="-3.14159 2.94903e-17 -1.23845e-13"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m2_5.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8_5 -->
-    <visual>
-      <origin xyz="-3.13082e-14 -0.13425 -0.0589" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-      <material name="screw_m2_5__configuration__8_5_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.13082e-14 -0.13425 -0.0589" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part nut_m3_3 -->
-    <visual>
-      <origin xyz="-3.31124e-14 -0.15 -0.0602" rpy="-3.14159 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m3.stl"/>
-      </geometry>
-      <material name="nut_m3_3_material">
-        <color rgba="0.690196 0.690196 0.690196 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-3.31124e-14 -0.15 -0.0602" rpy="-3.14159 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/nut_m3.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part din_6325_3mm__configuration__6 -->
-    <visual>
-      <origin xyz="-0.00491491 0.00344146 -0.0613" rpy="8.04912e-15 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_3mm__configuration__6.stl"/>
-      </geometry>
-      <material name="din_6325_3mm__configuration__6_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.00491491 0.00344146 -0.0613" rpy="8.04912e-15 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_3mm__configuration__6.stl"/>
-      </geometry>
-    </collision>
     <!-- Part outer_knee_2 -->
     <visual>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
+      <origin xyz="3.98986e-17 0.151 -0.0835" rpy="-1.5708 7.1941e-40 9.2389e-69"/>
       <geometry>
         <mesh filename="package://assets/outer_knee_2.stl"/>
       </geometry>
@@ -1115,47 +324,79 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-1.10995e-16 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
-      <geometry>
-        <mesh filename="package://assets/outer_knee_2.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part screw_m2_5__configuration__8_6 -->
+    <!-- Part nut_m3_3 -->
     <visual>
-      <origin xyz="-0.00344146 -0.00491491 -0.0597" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
+      <origin xyz="-5.96311e-19 -0.15 -0.0602" rpy="-3.14159 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+        <mesh filename="package://assets/nut_m3.stl"/>
       </geometry>
-      <material name="screw_m2_5__configuration__8_6_material">
-        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      <material name="nut_m3_3_material">
+        <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00344146 -0.00491491 -0.0597" rpy="3.14159 -3.1225e-17 -1.23623e-13"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part ankle_bearing_cover_2 -->
+    <!-- Part washer__configuration_m2_5_2 -->
     <visual>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
+      <origin xyz="0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
       <geometry>
-        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
-      <material name="ankle_bearing_cover_2_material">
+      <material name="washer__configuration_m2_5_2_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part inner_knee -->
+    <visual>
+      <origin xyz="-2.51535e-17 -0.151 0.0785" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/inner_knee.stl"/>
+      </geometry>
+      <material name="inner_knee_material">
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="2.71051e-20 0.151 -0.0835" rpy="-1.5708 -4.0528e-32 3.77882e-34"/>
+    <!-- Part bearing_6804_2rs_3 -->
+    <visual>
+      <origin xyz="3.98986e-17 -5.55112e-17 -0.0538" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
       <geometry>
-        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
+        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
       </geometry>
-    </collision>
+      <material name="bearing_6804_2rs_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part threaded_shaft__configuration_ankle -->
+    <visual>
+      <origin xyz="1.6507e-17 -0.15 -0.0633" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/threaded_shaft__configuration_ankle.stl"/>
+      </geometry>
+      <material name="threaded_shaft__configuration_ankle_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m3_3 -->
+    <visual>
+      <origin xyz="-5.96311e-19 -0.15 -0.0593" rpy="1.5708 -1.53053e-23 -2.77556e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m3.stl"/>
+      </geometry>
+      <material name="washer__configuration_m3_3_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part bearing_6802_2rs -->
+    <visual>
+      <origin xyz="3.29597e-17 -0.15 -0.0015" rpy="2.22045e-16 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
+      </geometry>
+      <material name="bearing_6802_2rs_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
     <!-- Part nut_m3_4 -->
     <visual>
-      <origin xyz="-3.31957e-14 -0.15 0.0059" rpy="3.14159 -1.5708 0"/>
+      <origin xyz="1.6507e-17 -0.15 0.0059" rpy="-3.14159 -1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/nut_m3.stl"/>
       </geometry>
@@ -1163,15 +404,209 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-3.31957e-14 -0.15 0.0059" rpy="3.14159 -1.5708 0"/>
+    <!-- Part washer__configuration_m2_5_3 -->
+    <visual>
+      <origin xyz="3.47487e-17 -0.16575 -0.0573" rpy="1.5708 -1.53053e-23 -2.77556e-16"/>
       <geometry>
-        <mesh filename="package://assets/nut_m3.stl"/>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
-    </collision>
+      <material name="washer__configuration_m2_5_3_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part outer_tibia -->
+    <visual>
+      <origin xyz="3.90584e-17 0.151 -0.0835" rpy="-1.5708 7.1941e-40 9.2389e-69"/>
+      <geometry>
+        <mesh filename="package://assets/outer_tibia.stl"/>
+      </geometry>
+      <material name="outer_tibia_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <!-- Part ankle_bearing_cover -->
+    <visual>
+      <origin xyz="0 0.151 -0.0835" rpy="-1.5708 7.1941e-40 9.2389e-69"/>
+      <geometry>
+        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
+      </geometry>
+      <material name="ankle_bearing_cover_material">
+        <color rgba="0.262745 0.282353 0.301961 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m3_4 -->
+    <visual>
+      <origin xyz="3.36103e-17 -0.15 0.005" rpy="-1.5708 1.57772e-30 -1.20518e-59"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m3.stl"/>
+      </geometry>
+      <material name="washer__configuration_m3_4_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part ankle_bearing_cover_2 -->
+    <visual>
+      <origin xyz="-4.06576e-19 0.151 0.0292" rpy="1.5708 1.53053e-23 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ankle_bearing_cover.stl"/>
+      </geometry>
+      <material name="ankle_bearing_cover_2_material">
+        <color rgba="0.262745 0.282353 0.301961 1.0"/>
+      </material>
+    </visual>
+    <!-- Part benchmark_outer_knee -->
+    <visual>
+      <origin xyz="-1.63064e-16 0.151 -0.0835" rpy="-1.5708 1.64748e-23 -1.25846e-52"/>
+      <geometry>
+        <mesh filename="package://assets/benchmark_outer_knee.stl"/>
+      </geometry>
+      <material name="benchmark_outer_knee_material">
+        <color rgba="0.262745 0.282353 0.301961 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_4 -->
+    <visual>
+      <origin xyz="3.51553e-17 -0.13425 -0.0573" rpy="1.5708 -1.53053e-23 -2.77556e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_4_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_5 -->
+    <visual>
+      <origin xyz="-1.00289e-18 -0.006 -0.007" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_5_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__8_2 -->
+    <visual>
+      <origin xyz="3.44505e-17 -0.16575 -0.0589" rpy="1.86841e-16 -6.12303e-17 4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__8_3 -->
+    <visual>
+      <origin xyz="-4.06576e-18 -0.13425 0.0046" rpy="3.14159 6.12303e-17 -4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__140 -->
+    <visual>
+      <origin xyz="-1.30104e-18 -0.006 -0.0086" rpy="3.09306e-16 -6.12303e-17 3.33067e-16"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__140_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_6 -->
+    <visual>
+      <origin xyz="0 -0.16575 0.003" rpy="-1.5708 1.57772e-30 -1.20518e-59"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_6_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__8_4 -->
+    <visual>
+      <origin xyz="-1.6263e-19 -0.16575 0.0046" rpy="3.14159 6.12303e-17 -4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part bearing_6802_2rs_2 -->
+    <visual>
+      <origin xyz="5.42101e-20 -0.15 -0.0528" rpy="-1.63813e-46 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/bearing_6802_2rs.stl"/>
+      </geometry>
+      <material name="bearing_6802_2rs_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part din_6325_3mm__configuration__6 -->
+    <visual>
+      <origin xyz="-0.00491491 0.00344146 -0.0613" rpy="-1.63813e-46 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/din_6325_3mm__configuration__6.stl"/>
+      </geometry>
+      <material name="din_6325_3mm__configuration__6_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__10_2 -->
+    <visual>
+      <origin xyz="0.0065 0.0204939 -0.0619" rpy="2.48073e-16 -6.12303e-17 3.33067e-16"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__10_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__8_5 -->
+    <visual>
+      <origin xyz="-0.00344146 -0.00491491 -0.0597" rpy="3.14159 6.12303e-17 -4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_5_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_7 -->
+    <visual>
+      <origin xyz="-0.0065 0.0204939 -0.0603" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_7_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_8 -->
+    <visual>
+      <origin xyz="0.0139256 -0.0097508 -0.076" rpy="1.5708 1.64748e-23 -1.25846e-52"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_8_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__10_3 -->
+    <visual>
+      <origin xyz="0.0065 -0.0262059 -0.0619" rpy="2.48073e-16 -6.12303e-17 3.33067e-16"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__10_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
     <!-- Part screw_m2_5__configuration__10_4 -->
     <visual>
-      <origin xyz="0.0065 0.0204939 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
+      <origin xyz="-0.0065 -0.0262059 -0.0619" rpy="2.48073e-16 -6.12303e-17 3.33067e-16"/>
       <geometry>
         <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
       </geometry>
@@ -1179,12 +614,126 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.0065 0.0204939 -0.0619" rpy="6.66134e-16 8.27463e-16 -1.244e-13"/>
+    <!-- Part screw_m2_5__configuration__140_2 -->
+    <visual>
+      <origin xyz="-1.6263e-19 0.006 0.0036" rpy="3.14159 6.12303e-17 -4.67721e-46"/>
       <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__10.stl"/>
+        <mesh filename="package://assets/screw_m2_5__configuration__140.stl"/>
       </geometry>
-    </collision>
+      <material name="screw_m2_5__configuration__140_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part inner_tibia -->
+    <visual>
+      <origin xyz="0 0.151 -0.0835" rpy="-1.5708 7.1941e-40 9.2389e-69"/>
+      <geometry>
+        <mesh filename="package://assets/inner_tibia.stl"/>
+      </geometry>
+      <material name="inner_tibia_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <!-- Part inner_knee_2 -->
+    <visual>
+      <origin xyz="0 0.151 -0.0835" rpy="-1.5708 7.1941e-40 9.2389e-69"/>
+      <geometry>
+        <mesh filename="package://assets/inner_knee.stl"/>
+      </geometry>
+      <material name="inner_knee_2_material">
+        <color rgba="0.262745 0.282353 0.301961 1.0"/>
+      </material>
+    </visual>
+    <!-- Part nut_m2_5 -->
+    <visual>
+      <origin xyz="9.48677e-19 0.006 -0.01" rpy="1.33486e-16 9.86076e-32 1.66533e-16"/>
+      <geometry>
+        <mesh filename="package://assets/nut_m2_5.stl"/>
+      </geometry>
+      <material name="nut_m2_5_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_9 -->
+    <visual>
+      <origin xyz="0.0065 0.0204939 -0.0603" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_9_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__8_6 -->
+    <visual>
+      <origin xyz="3.48571e-17 -0.13425 -0.0589" rpy="1.86841e-16 -6.12303e-17 4.67721e-46"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__8_6_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_10 -->
+    <visual>
+      <origin xyz="-3.90313e-18 -0.13425 0.0036" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_10_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_11 -->
+    <visual>
+      <origin xyz="-0.00344146 -0.00491491 -0.0607" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_11_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_12 -->
+    <visual>
+      <origin xyz="-0.0065 -0.0262059 -0.0603" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_12_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+    <!-- Part screw_m2_5__configuration__12 -->
+    <visual>
+      <origin xyz="0.0139256 -0.0097508 -0.0776" rpy="2.48073e-16 -6.12303e-17 5.55112e-17"/>
+      <geometry>
+        <mesh filename="package://assets/screw_m2_5__configuration__12.stl"/>
+      </geometry>
+      <material name="screw_m2_5__configuration__12_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <!-- Part nut_m2_5_2 -->
+    <visual>
+      <origin xyz="-1.0842e-19 -0.006 0.005" rpy="3.14159 7.1941e-40 2.77849e-68"/>
+      <geometry>
+        <mesh filename="package://assets/nut_m2_5.stl"/>
+      </geometry>
+      <material name="nut_m2_5_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <!-- Part washer__configuration_m2_5_13 -->
+    <visual>
+      <origin xyz="0.00344146 0.00491491 -0.0607" rpy="1.5708 -1.97215e-31 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
+      </geometry>
+      <material name="washer__configuration_m2_5_13_material">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
   </link>
   <!-- Link left_crank -->
   <link name="left_crank">
@@ -1195,7 +744,7 @@
     </inertial>
     <!-- Part knee_pulley_2 -->
     <visual>
-      <origin xyz="-1.66533e-16 -1.77647e-16 -0.0323" rpy="-1.75262 1.5708 0"/>
+      <origin xyz="-4.44089e-16 4.864e-16 -0.0323" rpy="-1.75262 1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/knee_pulley_2.stl"/>
       </geometry>
@@ -1203,15 +752,9 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-1.66533e-16 -1.77647e-16 -0.0323" rpy="-1.75262 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/knee_pulley_2.stl"/>
-      </geometry>
-    </collision>
     <!-- Part outer_crank -->
     <visual>
-      <origin xyz="-0.141126 -0.0537075 -0.0785" rpy="-1.5708 1.99949e-17 1.93444"/>
+      <origin xyz="-0.141126 -0.0537075 -0.0785" rpy="-1.5708 1.91378e-16 1.93444"/>
       <geometry>
         <mesh filename="package://assets/outer_crank.stl"/>
       </geometry>
@@ -1219,15 +762,9 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.141126 -0.0537075 -0.0785" rpy="-1.5708 1.99949e-17 1.93444"/>
-      <geometry>
-        <mesh filename="package://assets/outer_crank.stl"/>
-      </geometry>
-    </collision>
     <!-- Part washer__configuration_m2_5_14 -->
     <visual>
-      <origin xyz="-0.00201098 -0.00565296 -0.0151" rpy="-1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.00201098 -0.00565296 -0.0151" rpy="-1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
@@ -1235,15 +772,9 @@
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00201098 -0.00565296 -0.0151" rpy="-1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
     <!-- Part din_6325_3mm__configuration__6_2 -->
     <visual>
-      <origin xyz="0.0059011 0.00108492 -0.0351" rpy="1.25032e-13 -1.5708 0"/>
+      <origin xyz="0.0059011 0.00108492 -0.0351" rpy="9.57085e-14 -1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/din_6325_3mm__configuration__6.stl"/>
       </geometry>
@@ -1251,15 +782,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.0059011 0.00108492 -0.0351" rpy="1.25032e-13 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_3mm__configuration__6.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__20 -->
     <visual>
-      <origin xyz="-0.00201098 -0.00565296 -0.0135" rpy="3.14159 -6.02467e-16 -1.5708"/>
+      <origin xyz="-0.00201098 -0.00565296 -0.0135" rpy="-3.14159 1.95501e-14 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
       </geometry>
@@ -1267,15 +792,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00201098 -0.00565296 -0.0135" rpy="3.14159 -6.02467e-16 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
-      </geometry>
-    </collision>
     <!-- Part din_6325_4mm__configuration__14 -->
     <visual>
-      <origin xyz="-1.16573e-15 0.025 -0.0186" rpy="-3.77476e-15 -9.99201e-16 1.5708"/>
+      <origin xyz="-1.66533e-15 0.025 -0.0186" rpy="-1.46319e-14 -2.60647e-14 1.5708"/>
       <geometry>
         <mesh filename="package://assets/din_6325_4mm__configuration__14.stl"/>
       </geometry>
@@ -1283,15 +802,9 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-1.16573e-15 0.025 -0.0186" rpy="-3.77476e-15 -9.99201e-16 1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_4mm__configuration__14.stl"/>
-      </geometry>
-    </collision>
     <!-- Part washer__configuration_m2_5_15 -->
     <visual>
-      <origin xyz="-0.00389012 0.00456804 -0.0151" rpy="-1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.00389012 0.00456804 -0.0151" rpy="-1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
@@ -1299,15 +812,9 @@
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00389012 0.00456804 -0.0151" rpy="-1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
     <!-- Part bearing_6804_2rs_4 -->
     <visual>
-      <origin xyz="0 0 -0.0035" rpy="1.5708 -1.19515e-33 1.33851e-28"/>
+      <origin xyz="0 0 -0.0035" rpy="1.5708 -1.01136e-39 -7.51572e-28"/>
       <geometry>
         <mesh filename="package://assets/bearing_6804_2rs.stl"/>
       </geometry>
@@ -1315,15 +822,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.0035" rpy="1.5708 -1.19515e-33 1.33851e-28"/>
-      <geometry>
-        <mesh filename="package://assets/bearing_6804_2rs.stl"/>
-      </geometry>
-    </collision>
     <!-- Part inner_crank_alu -->
     <visual>
-      <origin xyz="-0.151 -8.35885e-15 0.0373" rpy="1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.151 -5.48417e-16 0.0373" rpy="1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/inner_crank_alu.stl"/>
       </geometry>
@@ -1331,15 +832,9 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.151 -8.35885e-15 0.0373" rpy="1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/inner_crank_alu.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__20_2 -->
     <visual>
-      <origin xyz="-0.00389012 0.00456804 -0.0135" rpy="3.14159 -6.02467e-16 -1.5708"/>
+      <origin xyz="-0.00389012 0.00456804 -0.0135" rpy="-3.14159 1.95501e-14 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
       </geometry>
@@ -1347,15 +842,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00389012 0.00456804 -0.0135" rpy="3.14159 -6.02467e-16 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
-      </geometry>
-    </collision>
     <!-- Part inner_crank_mirror -->
     <visual>
-      <origin xyz="-0.151 -8.31748e-15 -0.0181" rpy="1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.151 -2.45111e-16 -0.0181" rpy="1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/inner_crank_mirror.stl"/>
       </geometry>
@@ -1363,15 +852,9 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.151 -8.31748e-15 -0.0181" rpy="1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/inner_crank_mirror.stl"/>
-      </geometry>
-    </collision>
     <!-- Part washer__configuration_m2_5_16 -->
     <visual>
-      <origin xyz="-0.00885165 -0.00162738 -0.0116" rpy="-1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.00885165 -0.00162738 -0.0116" rpy="-1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
       </geometry>
@@ -1379,15 +862,9 @@
         <color rgba="0.6 0.6 0.6 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00885165 -0.00162738 -0.0116" rpy="-1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/washer__configuration_m2_5.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__20_3 -->
     <visual>
-      <origin xyz="-0.00885165 -0.00162738 -0.01" rpy="3.14159 -6.02467e-16 -1.5708"/>
+      <origin xyz="-0.00885165 -0.00162738 -0.01" rpy="-3.14159 1.95501e-14 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
       </geometry>
@@ -1395,15 +872,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.00885165 -0.00162738 -0.01" rpy="3.14159 -6.02467e-16 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__20.stl"/>
-      </geometry>
-    </collision>
     <!-- Part outer_crank_alu_mirror -->
     <visual>
-      <origin xyz="-0.151 -7.93931e-15 -0.0181" rpy="1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.151 2.54489e-16 -0.0181" rpy="1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/outer_crank_alu_mirror.stl"/>
       </geometry>
@@ -1411,15 +882,9 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.151 -7.93931e-15 -0.0181" rpy="1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/outer_crank_alu_mirror.stl"/>
-      </geometry>
-    </collision>
     <!-- Part middle_crank -->
     <visual>
-      <origin xyz="-0.151 -8.28669e-15 0.0273" rpy="1.5708 1.37614e-18 -1.5708"/>
+      <origin xyz="-0.151 1.22352e-16 0.0273" rpy="1.5708 7.17133e-17 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/middle_crank.stl"/>
       </geometry>
@@ -1427,12 +892,6 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.151 -8.28669e-15 0.0273" rpy="1.5708 1.37614e-18 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/middle_crank.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Link ankle_shaft -->
   <link name="ankle_shaft">
@@ -1443,7 +902,7 @@
     </inertial>
     <!-- Part p210fm_plain_bearing -->
     <visual>
-      <origin xyz="5.55112e-17 -1.38778e-16 -0.0069" rpy="-4.76784e-14 -6.67175e-15 -2.04725e-15"/>
+      <origin xyz="-2.77556e-17 -1.66533e-16 -0.0069" rpy="-4.76784e-14 -6.67175e-15 -1.82521e-15"/>
       <geometry>
         <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
       </geometry>
@@ -1451,15 +910,9 @@
         <color rgba="0.901961 0.890196 0.635294 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="5.55112e-17 -1.38778e-16 -0.0069" rpy="-4.76784e-14 -6.67175e-15 -2.04725e-15"/>
-      <geometry>
-        <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
-      </geometry>
-    </collision>
     <!-- Part p210fm_plain_bearing_2 -->
     <visual>
-      <origin xyz="2.77556e-17 0 0.0001" rpy="-3.14159 9.014e-32 1.77636e-17"/>
+      <origin xyz="2.77556e-17 2.77556e-17 0.0001" rpy="-3.14159 2.38853e-31 2.88658e-17"/>
       <geometry>
         <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
       </geometry>
@@ -1467,12 +920,6 @@
         <color rgba="0.901961 0.890196 0.635294 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="2.77556e-17 0 0.0001" rpy="-3.14159 9.014e-32 1.77636e-17"/>
-      <geometry>
-        <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
-      </geometry>
-    </collision>
     <!-- Part p210fm_plain_bearing_3 -->
     <visual>
       <origin xyz="-0.15 0.05 0.0001" rpy="-3.14159 -2.28649e-14 -1.5708"/>
@@ -1483,12 +930,6 @@
         <color rgba="0.901961 0.890196 0.635294 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.15 0.05 0.0001" rpy="-3.14159 -2.28649e-14 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__8_7 -->
     <visual>
       <origin xyz="-0.138688 0.0499415 -0.0034" rpy="-1.5708 1.07721e-14 2.81984"/>
@@ -1499,12 +940,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.138688 0.0499415 -0.0034" rpy="-1.5708 1.07721e-14 2.81984"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
     <!-- Part ankle_shaft -->
     <visual>
       <origin xyz="0.151 0.025 0.0495" rpy="1.5708 2.38316e-14 1.5708"/>
@@ -1515,12 +950,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.151 0.025 0.0495" rpy="1.5708 2.38316e-14 1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_shaft.stl"/>
-      </geometry>
-    </collision>
     <!-- Part shaft_end -->
     <visual>
       <origin xyz="0.151 0.025 0.0495" rpy="1.5708 2.38316e-14 1.5708"/>
@@ -1531,12 +960,6 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.151 0.025 0.0495" rpy="1.5708 2.38316e-14 1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/shaft_end.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__8_8 -->
     <visual>
       <origin xyz="-0.131573 0.0475698 -0.0034" rpy="-1.5708 1.07633e-14 2.81984"/>
@@ -1547,12 +970,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.131573 0.0475698 -0.0034" rpy="-1.5708 1.07633e-14 2.81984"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__8_9 -->
     <visual>
       <origin xyz="-0.0184271 0.00243019 -0.0034" rpy="1.5708 1.11129e-14 2.81984"/>
@@ -1563,12 +980,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.0184271 0.00243019 -0.0034" rpy="1.5708 1.11129e-14 2.81984"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
     <!-- Part shaft_end_2 -->
     <visual>
       <origin xyz="-0.301 0.025 0.0495" rpy="1.5708 -2.51733e-14 -1.5708"/>
@@ -1579,12 +990,6 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.301 0.025 0.0495" rpy="1.5708 -2.51733e-14 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/shaft_end.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m2_5__configuration__8_10 -->
     <visual>
       <origin xyz="-0.011312 5.84785e-05 -0.0034" rpy="1.5708 1.11261e-14 2.81984"/>
@@ -1595,15 +1000,9 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.011312 5.84785e-05 -0.0034" rpy="1.5708 1.11261e-14 2.81984"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m2_5__configuration__8.stl"/>
-      </geometry>
-    </collision>
     <!-- Part p210fm_plain_bearing_4 -->
     <visual>
-      <origin xyz="-0.15 0.05 -0.0069" rpy="-4.96768e-14 -6.1175e-15 -1.92513e-15"/>
+      <origin xyz="-0.15 0.05 -0.0069" rpy="-4.96768e-14 -6.1175e-15 -1.55875e-15"/>
       <geometry>
         <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
       </geometry>
@@ -1611,12 +1010,6 @@
         <color rgba="0.901961 0.890196 0.635294 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.15 0.05 -0.0069" rpy="-4.96768e-14 -6.1175e-15 -1.92513e-15"/>
-      <geometry>
-        <mesh filename="package://assets/p210fm_plain_bearing.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Frame closing_crank (dummy link + fixed joint) -->
   <link name="closing_crank">
@@ -1628,23 +1021,23 @@
     </inertial>
   </link>
   <joint name="closing_crank_frame" type="fixed">
-    <origin xyz="-0.15 0.05 -0.0068" rpy="1.5708 -6.1175e-15 -1.7919e-15"/>
+    <origin xyz="-0.15 0.05 -0.0068" rpy="1.5708 -6.11275e-15 -1.50324e-15"/>
     <parent link="ankle_shaft"/>
     <child link="closing_crank"/>
     <axis xyz="0 0 0"/>
   </joint>
   <!-- Joint from left_crank to ankle_shaft -->
   <joint name="upper_crank" type="revolute">
-    <origin xyz="-5.76761e-14 0.025 -0.029" rpy="-3.14159 -9.93684e-16 2.49809"/>
+    <origin xyz="-4.14113e-14 0.025 -0.029" rpy="3.14159 -1.67015e-15 2.49809"/>
     <parent link="left_crank"/>
     <child link="ankle_shaft"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from left_tibia to left_crank -->
+  <!-- Joint from inner_knee to left_crank -->
   <joint name="ankle_passive" type="revolute">
-    <origin xyz="-1.42561e-14 -1.11022e-15 -0.005" rpy="1.98711e-16 -7.13893e-17 -1.5708"/>
-    <parent link="left_tibia"/>
+    <origin xyz="0 0 -0.005" rpy="1.65388e-31 -2.80452e-29 -1.5708"/>
+    <parent link="inner_knee"/>
     <child link="left_crank"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-1.5708" upper="1.22173"/>
@@ -1658,7 +1051,7 @@
     </inertial>
     <!-- Part din_6325_4mm__configuration__20 -->
     <visual>
-      <origin xyz="0.025 -4.16334e-17 -0.0096" rpy="-1.40811e-16 -2.45899e-17 3.14159"/>
+      <origin xyz="0.025 -6.93889e-17 -0.0096" rpy="-2.21559e-15 3.49427e-16 -3.14159"/>
       <geometry>
         <mesh filename="package://assets/din_6325_4mm__configuration__20.stl"/>
       </geometry>
@@ -1666,15 +1059,9 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.025 -4.16334e-17 -0.0096" rpy="-1.40811e-16 -2.45899e-17 3.14159"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_4mm__configuration__20.stl"/>
-      </geometry>
-    </collision>
     <!-- Part benchmark_foot -->
     <visual>
-      <origin xyz="2.19443e-16 0.301 -0.0272" rpy="-1.5708 -7.58912e-30 6.93889e-18"/>
+      <origin xyz="1.09892e-15 0.301 -0.0272" rpy="-1.5708 1.89761e-17 7.77156e-16"/>
       <geometry>
         <mesh filename="package://assets/benchmark_foot.stl"/>
       </geometry>
@@ -1682,15 +1069,9 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="2.19443e-16 0.301 -0.0272" rpy="-1.5708 -7.58912e-30 6.93889e-18"/>
-      <geometry>
-        <mesh filename="package://assets/benchmark_foot.stl"/>
-      </geometry>
-    </collision>
     <!-- Part ankle_alu -->
     <visual>
-      <origin xyz="8.97963e-16 0.301 -0.0626" rpy="-1.5708 4.91799e-17 4.51028e-16"/>
+      <origin xyz="-4.83907e-16 0.301 -0.0626" rpy="-1.5708 1.27825e-17 1.63883e-32"/>
       <geometry>
         <mesh filename="package://assets/ankle_alu.stl"/>
       </geometry>
@@ -1698,15 +1079,9 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="8.97963e-16 0.301 -0.0626" rpy="-1.5708 4.91799e-17 4.51028e-16"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_alu.stl"/>
-      </geometry>
-    </collision>
     <!-- Part ankle_alu_2 -->
     <visual>
-      <origin xyz="1.26643e-15 0.301 -0.0726" rpy="-1.5708 2.3236e-16 9.4369e-16"/>
+      <origin xyz="-5.74329e-16 0.301 -0.0726" rpy="-1.5708 2.35814e-16 2.22045e-16"/>
       <geometry>
         <mesh filename="package://assets/ankle_alu.stl"/>
       </geometry>
@@ -1714,15 +1089,9 @@
         <color rgba="0.917647 0.917647 0.917647 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="1.26643e-15 0.301 -0.0726" rpy="-1.5708 2.3236e-16 9.4369e-16"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_alu.stl"/>
-      </geometry>
-    </collision>
     <!-- Part ankle_mirror -->
     <visual>
-      <origin xyz="-1.21431e-17 0.301 -0.0272" rpy="-1.5708 1.07742e-31 -1.30193e-30"/>
+      <origin xyz="-1.21702e-17 0.301 -0.0272" rpy="-1.5708 2.79039e-34 1.82454e-48"/>
       <geometry>
         <mesh filename="package://assets/ankle_mirror.stl"/>
       </geometry>
@@ -1730,12 +1099,6 @@
         <color rgba="0.262745 0.282353 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-1.21431e-17 0.301 -0.0272" rpy="-1.5708 1.07742e-31 -1.30193e-30"/>
-      <geometry>
-        <mesh filename="package://assets/ankle_mirror.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Frame closing_foot (dummy link + fixed joint) -->
   <link name="closing_foot">
@@ -1747,7 +1110,7 @@
     </inertial>
   </link>
   <joint name="closing_foot_frame" type="fixed">
-    <origin xyz="0.025 -1.94289e-16 -0.0232" rpy="1.5708 -2.0777e-16 -3.14159"/>
+    <origin xyz="0.025 -1.11022e-16 -0.0232" rpy="1.5708 -1.80862e-16 -3.14159"/>
     <parent link="benchmark_foot"/>
     <child link="closing_foot"/>
     <axis xyz="0 0 0"/>
@@ -1762,33 +1125,33 @@
     </inertial>
   </link>
   <joint name="foot_frame" type="fixed">
-    <origin xyz="-0.00573895 -0.0515 -0.0197" rpy="1.5708 7.63818e-30 -3.14159"/>
+    <origin xyz="-0.00573895 -0.0515 -0.0197" rpy="1.5708 -1.89761e-17 -3.14159"/>
     <parent link="benchmark_foot"/>
     <child link="foot"/>
     <axis xyz="0 0 0"/>
   </joint>
-  <!-- Joint from left_tibia to benchmark_foot -->
+  <!-- Joint from inner_knee to benchmark_foot -->
   <joint name="ankle_joint" type="revolute">
-    <origin xyz="-3.31207e-14 -0.15 -0.0503" rpy="3.14159 8.42708e-16 3.14159"/>
-    <parent link="left_tibia"/>
+    <origin xyz="5.42101e-20 -0.15 -0.0503" rpy="3.14159 2.1445e-17 -3.14159"/>
+    <parent link="inner_knee"/>
     <child link="benchmark_foot"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-1.22173" upper="1.5708"/>
   </joint>
-  <!-- Joint from aluminum_profile to left_tibia -->
+  <!-- Joint from aluminum_profile to inner_knee -->
   <joint name="knee_joint" type="revolute">
-    <origin xyz="-0.000132957 -0.0835 0.269" rpy="1.5708 3.18659e-18 2.27523e-16"/>
+    <origin xyz="-0.000132957 -0.0835 0.269" rpy="1.5708 -0 1.64748e-23"/>
     <parent link="aluminum_profile"/>
-    <child link="left_tibia"/>
+    <child link="inner_knee"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-2.0944" upper="0"/>
   </joint>
   <!-- Link motor_pulley_2 -->
   <link name="motor_pulley_2">
     <inertial>
-      <origin xyz="-6.05793e-16 4.59528e-05 -0.010399" rpy="0 0 0"/>
+      <origin xyz="-6.05768e-16 4.59528e-05 -0.010399" rpy="0 0 0"/>
       <mass value="0.0695532"/>
-      <inertia ixx="9.82762e-06" ixy="-2.72928e-21" ixz="-1.32382e-20" iyy="9.79581e-06" iyz="-2.8028e-08" izz="1.56643e-05"/>
+      <inertia ixx="9.82762e-06" ixy="-2.72163e-21" ixz="-1.32382e-20" iyy="9.79581e-06" iyz="-2.8028e-08" izz="1.56643e-05"/>
     </inertial>
     <!-- Part din_6325_3mm__configuration__12_2 -->
     <visual>
@@ -1800,12 +1163,6 @@
         <color rgba="0.498039 0.498039 0.498039 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.01 -0.006" rpy="-1.5708 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/din_6325_3mm__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_7 -->
     <visual>
       <origin xyz="-0.01 0 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1816,12 +1173,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.01 0 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_8 -->
     <visual>
       <origin xyz="-0.005 0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1832,12 +1183,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.005 0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_9 -->
     <visual>
       <origin xyz="0.005 0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1848,12 +1193,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.005 0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_10 -->
     <visual>
       <origin xyz="0.005 -0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1864,12 +1203,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.005 -0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_11 -->
     <visual>
       <origin xyz="-0.005 -0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1880,12 +1213,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.005 -0.00866025 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
     <!-- Part motor_pulley_2 -->
     <visual>
       <origin xyz="0 0 -0.0194" rpy="-1.5708 -1.5708 0"/>
@@ -1896,12 +1223,6 @@
         <color rgba="0.690196 0.690196 0.690196 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.0194" rpy="-1.5708 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/motor_pulley.stl"/>
-      </geometry>
-    </collision>
     <!-- Part screw_m3__configuration__12_12 -->
     <visual>
       <origin xyz="0.01 0 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
@@ -1912,12 +1233,6 @@
         <color rgba="0.301961 0.301961 0.301961 1.0"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.01 0 -0.0102" rpy="0 -6.12303e-17 -1.5708"/>
-      <geometry>
-        <mesh filename="package://assets/screw_m3__configuration__12.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Joint from aluminum_profile to motor_pulley_2 -->
   <joint name="ankle_motor" type="revolute">

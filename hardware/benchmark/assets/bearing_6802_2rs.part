@@ -1,12 +1,12 @@
 {
     "configuration": "default",
     "documentId": "326c7618f048bbd5c9f71f42",
-    "documentMicroversion": "cc07d976a6a54c15ae03af4a",
+    "documentMicroversion": "11b0c63898ee5fa39e9956f6",
     "elementId": "441447eb406ac771b3d5f11b",
     "fullConfiguration": "default",
-    "id": "MDyau69RvCFp1KUJ/",
+    "id": "MHCEyvHhzH98Gc+o1",
     "isStandardContent": false,
-    "name": "Bearing 6802-2RS <1>",
+    "name": "Bearing 6802-2RS <2>",
     "partId": "JHD",
     "suppressed": false,
     "type": "Part"
