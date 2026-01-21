@@ -1,0 +1,12 @@
+{
+    "url": "https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/w/085260104f7529d4aa44dfd3/e/362dba3e9b9b20be3e7fcf95",
+    "output_format": "urdf",
+    "freejoint": false,
+
+    "joint_properties": {
+        "knee_joint": {"actuated": false},
+        "ankle_passive": {"actuated": false},
+        "ankle_joint": {"actuated": false},
+        "upper_crank": {"actuated": false}
+    }
+}
