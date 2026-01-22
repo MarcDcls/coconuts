@@ -52,12 +52,12 @@ while True:
     step_start = time.time()      
 
     # Knee oscillation
-    knee_target = np.sin(2*t - np.pi/2) * 0.5 + 0.5
+    knee_target = np.sin(2*t - np.pi/2) * 0.8 + 0.8
     ankle_target = 0.0
 
     # Ankle oscillation
     # knee_target = 0.0
-    # ankle_target = np.sin(2*t) * 0.5
+    # ankle_target = np.sin(3*t) * 0.8
 
     joint_task.set_joints({
         "knee_joint": JOINT_GAINS["knee_motor"] * knee_target,
@@ -65,7 +65,6 @@ while True:
     })
 
     solver.solve(True)
-    solver.dump_status()
     robot.update_kinematics()
     
     viz.display(robot.state.q)
