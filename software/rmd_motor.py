@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
     ids = [int(arg) for arg in sys.argv[1:]]
 
-    with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=True) as bus:
+    with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
         motors = {}
         for id in ids:
             motors[id] = RMDMotor(bus, id)

@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import time
 import sys
 
-DT = 0.02
+DT = 0.01
 
 if len(sys.argv) <= 1:
     print("Usage: python move.py [IDS]")
@@ -23,7 +23,7 @@ if len(sys.argv) <= 1:
 
 ids = [int(arg) for arg in sys.argv[1:]]
 
-with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=True) as bus:
+with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
     motors = {}
     for id in ids:
         motors[id] = RMDMotor(bus, id)
@@ -49,7 +49,7 @@ with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=T
             
             t += DT
             while time.perf_counter() - step_start < DT:
-                time.sleep(1e-4)
+                pass
         
         for id, motor in motors.items():
             motor.stop_motor()
