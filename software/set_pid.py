@@ -12,22 +12,26 @@ from software.rmd_motor import BITRATE, RMDMotor, RMDListener
 import time
 import sys
 
-if len(sys.argv) <= 1:
-    print("Usage: python read_rom.py [IDS]")
-    print("Example: python read_rom.py 1 2 3")
+if len(sys.argv) != 4:
+    print("Usage: python set_filter.py [ID] [Kp] [Ki]")
+    print("Example: python set_filter.py 1 100 5")
     sys.exit(1)
 
-ids = [int(arg) for arg in sys.argv[1:]]
+motor_id = int(sys.argv[1])
+Kp = float(sys.argv[2])
+Ki = float(sys.argv[3])
+
+# Default current and velocity PI values
+cur_kp = 100
+cur_ki = 100
+vel_kp = 100
+vel_ki = 5
 
 with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
-    motors = {}
-    for id in ids:
-        motors[id] = RMDMotor(bus, id)
+    motors = {motor_id: RMDMotor(bus, motor_id)}
 
     listener = RMDListener(motors)
     with can.Notifier(bus, [listener]):
         for id, motor in motors.items():
-            motor.read_acceleration()
-            time.sleep(0.1)
-            motor.read_pid()
-            time.sleep(0.1)
+            motor.write_pid(cur_kp, cur_ki, vel_kp, vel_ki, Kp, Ki, to_rom=True)
+            time.sleep(0.3)

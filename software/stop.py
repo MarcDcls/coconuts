@@ -8,7 +8,9 @@
 
 import can.interfaces.canalystii as canalystii
 from software.rmd_motor import BITRATE, RMDMotorBroadcast
+import time
 
 with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE) as bus:
     motors = RMDMotorBroadcast(bus)
     motors.stop_motor()
+    time.sleep(1)

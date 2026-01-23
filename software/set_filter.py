@@ -12,12 +12,13 @@ from software.rmd_motor import BITRATE, RMDMotor, RMDListener
 import time
 import sys
 
-if len(sys.argv) <= 1:
-    print("Usage: python read_rom.py [IDS]")
-    print("Example: python read_rom.py 1 2 3")
+if len(sys.argv) <= 2:
+    print("Usage: python set_filter.py [BOOL] [IDS]")
+    print("Example: python set_filter.py 1 1 2 3")
     sys.exit(1)
 
-ids = [int(arg) for arg in sys.argv[1:]]
+bool_val = bool(int(sys.argv[1]))
+ids = [int(arg) for arg in sys.argv[2:]]
 
 with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
     motors = {}
@@ -27,7 +28,5 @@ with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=F
     listener = RMDListener(motors)
     with can.Notifier(bus, [listener]):
         for id, motor in motors.items():
-            motor.read_acceleration()
-            time.sleep(0.1)
-            motor.read_pid()
-            time.sleep(0.1)
+            motor.filter_mode(bool_val)
+            time.sleep(0.3)

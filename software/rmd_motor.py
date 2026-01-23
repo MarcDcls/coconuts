@@ -50,22 +50,21 @@ class RMDMotor:
         if data[0] in [0x9C, 0xA4]:
             self.status.update({
                 "temp": data[1],
-                "current": int.from_bytes(data[2:4], byteorder='little', signed=True) * 100, 
+                "current": int.from_bytes(data[2:4], byteorder='little', signed=True) * 100, # Unit to verify
                 "speed": int.from_bytes(data[4:6], byteorder='little', signed=True), 
-                "position": int.from_bytes(data[6:8], byteorder='little', signed=True) * 100, 
+                "position": int.from_bytes(data[6:8], byteorder='little', signed=True), 
                 "last_update": time.perf_counter()
             })
         
         # PID print
         elif data[0] in [0x30, 0x31, 0x32]:
             print(f"Motor ID {self.motor_id} PID parameters:")
-            print(f"  Current Kp: {data[1]}")
-            print(f"  Current Ki: {data[2]}")
-            print(f"  Velocity Kp: {data[3]}")
-            print(f"  Velocity Ki: {data[4]}")
-            print(f"  Position Kp: {data[5]}")
-            print(f"  Position Ki: {data[6]}")
-            print(f"  Position Kd: {data[7]}", flush=True)
+            print(f"  Current Kp: {data[2]}")
+            print(f"  Current Ki: {data[3]}")
+            print(f"  Velocity Kp: {data[4]}")
+            print(f"  Velocity Ki: {data[5]}")
+            print(f"  Position Kp: {data[6]}")
+            print(f"  Position Ki: {data[7]}", flush=True)
 
         # Ping print
         elif data[0] == 0x01:
@@ -92,10 +91,6 @@ class RMDMotor:
         """Reads motor temperature, voltage, and error flags (Command 0x9C)."""
         self._send([0x9C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
     
-    def read_pid(self):
-        """Reads the current PID parameters from the motor (Command 0x30)."""
-        self._send([0x30, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
-
     def read_acceleration(self, pos_acc: bool=True, pos_dec: bool=True, vel_acc: bool=True, vel_dec: bool=True):
         """Reads the acceleration setting from the motor (Command 0x42)."""
         if pos_acc:
@@ -110,6 +105,10 @@ class RMDMotor:
         if vel_dec:
             self._send([0x42, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
             time.sleep(0.1)
+        
+    def read_pid(self):
+        """Reads the current proportional gain Kp from the motor (Command 0x30)."""
+        self._send([0x30, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
 
     # --- CONFIGURATION COMMANDS ---
 
@@ -121,14 +120,26 @@ class RMDMotor:
         """Restarts the motor system (Command 0x76)."""
         self._send([0x76, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
 
-    def write_pid_to_ram(self, cur_kp: int, cur_ki: int, vel_kp: int, vel_ki: int, pos_kp: int, pos_ki: int, pos_kd: int):
-        """Writes PID parameters to volatile RAM (Command 0x31)."""
-        self._send([0x31, cur_kp, cur_ki, vel_kp, vel_ki, pos_kp, pos_ki, pos_kd])
+    def active_reply(self, cmd: int, enable: bool, interval_10ms: int=0):
+        """Enables or disables active reply mode (Command 0xB6)."""
+        flag = 0x01 if enable else 0x00
+        interval = interval_10ms.to_bytes(4, byteorder='little', signed=False)
+        self._send([0xB6, cmd, flag, interval[0], interval[1], 0x00, 0x00, 0x00])
+
+    def filter_mode(self, enable: bool):
+        """Enables or disables motor broadcast mode."""
+        flag = 0x01 if enable else 0x00
+        self._send([0x20, 0x02, 0x00, 0x00, flag, 0x00, 0x00, 0x00])
+
+    def set_id(self, new_id: int):
+        """Sets a new motor ID (Command 0x79)."""
+        self._send([0x79, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, new_id])
     
-    def write_pid_to_rom(self, cur_kp: int, cur_ki: int, vel_kp: int, vel_ki: int, pos_kp: int, pos_ki: int, pos_kd: int):
-        """Writes PID parameters to non-volatile ROM (Command 0x32)."""
-        self._send([0x32, cur_kp, cur_ki, vel_kp, vel_ki, pos_kp, pos_ki, pos_kd])
-    
+    def write_pid(self, cur_kp: int=0, cur_ki: int=0, vel_kp: int=0, vel_ki: int=0, pos_kp: int=0, pos_ki: int=0, to_rom: bool=True):
+        """Writes position proportional gain Kp to non-volatile ROM (Command 0x32) or volatile RAM (Command 0x31)."""
+        cmd = 0x32 if to_rom else 0x31
+        self._send([cmd, 0x00, cur_kp, cur_ki, vel_kp, vel_ki, pos_kp, pos_ki])
+        
     # --- CONTROL COMMANDS ---
 
     def stop_motor(self):
@@ -139,7 +150,7 @@ class RMDMotor:
         """Stops the motor and holds position (Command 0x81)."""
         self._send([0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
     
-    def set_position(self, angle_deg: int, max_speed_dps: int=3600):
+    def set_position(self, angle_deg: float, max_speed_dps: int=3600):
         """Multi-turn absolute position control (Command 0xA4).
         Value: angle in degrees. Protocol uses 0.01 deg/LSB.
         """
@@ -153,7 +164,7 @@ class RMDMotor:
 
     def get_position(self):
         """Returns the last known position in degrees."""
-        return self.status["position"] / 100.0
+        return self.status["position"]
     
     def get_velocity(self):
         """Returns the last known velocity in degrees per second."""
@@ -204,7 +215,7 @@ if __name__ == "__main__":
     if len(sys.argv) <= 1:
         print("Usage: python rmd_motor.py [IDS]")
         print("Example: python rmd_motor.py 1 2 3")
-        sys.exit(1)
+        sys.exit(1) 
 
     ids = [int(arg) for arg in sys.argv[1:]]
 
@@ -222,5 +233,5 @@ if __name__ == "__main__":
                     motor.read_status()
                     print(f"Motor ID {id} status: {motor.status}")
                 
-                while time.time() - step_start < 0.005:
+                while time.time() - step_start < 0.1:
                     time.sleep(1e-4)

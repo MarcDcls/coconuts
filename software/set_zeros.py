@@ -15,3 +15,4 @@ with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE) as bus:
     motors.set_zero()
     time.sleep(0.5)
     motors.restart()
+    time.sleep(0.5)

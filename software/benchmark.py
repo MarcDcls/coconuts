@@ -8,12 +8,24 @@
 
 import placo
 from placo_utils.visualization import robot_viz, frame_viz, point_viz, robot_frame_viz, arrow_viz, tf, contacts_viz
-
 import numpy as np
+import matplotlib.pyplot as plt
 import time
+import argparse
 
-DT = 0.01
-JOINT_GAINS = {"knee_motor": -1.0, "ankle_motor": 1.0}
+DT = 0.020  # Not working under 0.02 with motors
+JOINT_SIGNS = {"knee_joint": -1.0, "ankle_joint": 1.0}
+MOTOR_SIGNS = {"knee_motor": -1.0, "ankle_motor": -1.0}
+MOTOR_IDS = {"knee_motor": 1, "ankle_motor": 2}
+
+parser = argparse.ArgumentParser(description="Benchmark robot simulation.")
+parser.add_argument("--plot", action="store_true", help="Plot the results instead of running the simulation.")
+parser.add_argument("--send", action="store_true", help="Send commands to real motors instead of running the simulation.")
+parser.add_argument("--duration", type=float, default=2*np.pi, help="Duration of the benchmark in seconds.")
+parser.add_argument("--knee_only", action="store_true", help="Control only the knee motor.")
+parser.add_argument("--ankle_only", action="store_true", help="Control only the ankle motor.")
+parser.add_argument("--zero", action="store_true", help="Set current position as zero for all motors.")
+args = parser.parse_args()
 
 robot = placo.RobotWrapper("hardware/benchmark")
 solver = placo.KinematicsSolver(robot)
@@ -44,32 +56,110 @@ for i in range(10):
     solver.solve(True)
     robot.update_kinematics()
 
-viz = robot_viz(robot)
-viz.display(robot.state.q)
+if not args.send and not args.plot:
+    print("Simulation mode. Not sending commands to real motors.")
+    viz = robot_viz(robot)
+    viz.display(robot.state.q)
 
 t = 0.0
-while True:
-    step_start = time.time()      
+motor_traj = [(0.0, 0.0, 0.0)]
+while t < args.duration:
+    t += DT
+    step_start = time.perf_counter()
 
-    # Knee oscillation
-    knee_target = np.sin(2*t - np.pi/2) * 0.8 + 0.8
-    ankle_target = 0.0
+    knee_target = np.sin(2*t - np.pi/2) * 0.5 + 0.5
+    ankle_target = np.sin(2*t) * 0.7
 
-    # Ankle oscillation
-    # knee_target = 0.0
-    # ankle_target = np.sin(3*t) * 0.8
+    if args.knee_only:
+        ankle_target = 0.0
+    elif args.ankle_only:
+        knee_target = 0.0
+    elif args.zero:
+        knee_target = 0.0
+        ankle_target = 0.0
 
     joint_task.set_joints({
-        "knee_joint": JOINT_GAINS["knee_motor"] * knee_target,
-        "ankle_joint": JOINT_GAINS["ankle_motor"] * ankle_target
+        "knee_joint": JOINT_SIGNS["knee_joint"] * knee_target,
+        "ankle_joint": JOINT_SIGNS["ankle_joint"] * ankle_target
     })
 
     solver.solve(True)
     robot.update_kinematics()
-    
-    viz.display(robot.state.q)
+    motor_traj.append((t, robot.get_joint("knee_motor") * 180 / np.pi, robot.get_joint("ankle_motor") * 180 / np.pi))
 
-    t += DT
-    time_until_next_step = DT - (time.time() - step_start)
-    if time_until_next_step > 0:
-        time.sleep(time_until_next_step)
+    # If in simulation mode, update visualization and wait to maintain real-time pace
+    if not args.send and not args.plot:
+        viz.display(robot.state.q)
+
+        time_until_next_step = DT - (time.perf_counter() - step_start)
+        if time_until_next_step > 0:
+            time.sleep(time_until_next_step)
+
+# Plot results
+if args.plot:
+    motor_traj = np.array(motor_traj)
+    plt.figure()
+    plt.title("Motor Positions")
+    plt.plot(motor_traj[:,0], motor_traj[:,1], label="Knee Motor Position")
+    plt.plot(motor_traj[:,0], motor_traj[:,2], label="Ankle Motor Position")
+    plt.xlabel("Time (s)")
+    plt.ylabel("Position (rad)")
+    plt.grid()
+    plt.legend()
+    plt.show()
+
+# Send commands to real motors
+if args.send:
+    print("Sending commands to real motors...")
+    import can
+    import can.interfaces.canalystii as canalystii
+    from software.rmd_motor import BITRATE, RMDMotor, RMDListener
+
+    with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
+        motors = {}
+        for id in MOTOR_IDS.values():
+            motors[id] = RMDMotor(bus, id)
+
+        listener = RMDListener(motors)
+        with can.Notifier(bus, [listener]):
+
+            states = {}
+            for id, motor in motors.items():
+                for _ in range(3):
+                    motor.set_position(0, max_speed_dps=500)
+                    states[id] = []
+                    time.sleep(0.3)
+            time.sleep(3)
+            
+            i = 0
+            while i < len(motor_traj):
+                step_start = time.perf_counter()
+
+                motors[MOTOR_IDS["knee_motor"]].set_position(MOTOR_SIGNS["knee_motor"] * motor_traj[i][1])
+                time.sleep(0.002)
+                motors[MOTOR_IDS["ankle_motor"]].set_position(MOTOR_SIGNS["ankle_motor"] * motor_traj[i][2])
+                time.sleep(0.002)
+                states[MOTOR_IDS["knee_motor"]].append((motor_traj[i][0], motor_traj[i][1], MOTOR_SIGNS["knee_motor"] * motors[MOTOR_IDS["knee_motor"]].get_position()))
+                states[MOTOR_IDS["ankle_motor"]].append((motor_traj[i][0], motor_traj[i][2], MOTOR_SIGNS["ankle_motor"] * motors[MOTOR_IDS["ankle_motor"]].get_position()))
+                
+                i += 1
+
+                while time.perf_counter() - step_start < DT:
+                    pass
+            
+            for id, motor in motors.items():
+                motor.stop_motor()
+                time.sleep(0.3)
+
+            # Plot results
+            for id, state in states.items():
+                state = np.array(state)
+                plt.figure()
+                plt.title(f"Motor ID {id} Position Tracking")
+                plt.plot(state[:,0], state[:,1], label="Target Position", linestyle='--')
+                plt.plot(state[:,0], state[:,2], label="Actual Position")
+                plt.xlabel("Time (s)")
+                plt.ylabel("Position (degrees)")
+                plt.legend()
+                plt.grid()
+                plt.show() 
