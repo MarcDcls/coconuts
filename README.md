@@ -3,51 +3,33 @@
 [![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue.svg)](LICENSE)
 [![License: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-yellow.svg)](LICENSE)
 
-[WIP]
+This repository contains the hardware design of the CocoNuts humanoid platform and the software to operate it with a CANalyst-II interface. 
+
+It is currently under development and marked as a work in progress.
 
 <p align="center">
   <img width="50%" alt="image" src="https://github.com/user-attachments/assets/c196ff6f-5483-44ac-a44b-0cd585367477" />
 </p>
 
-## CAN setup
+## Install
 
-To show SLCAN devices:
-```
-sudo modprobe usbserial vendor=0x04d8 product=0x0053
-```
+To install the repository, you need the uv package manager. 
+If you don't have it yet, you can install it by following the instructions [here](https://docs.astral.sh/uv/getting-started/installation/#installation-methods).
 
-To set a 1Mb driver:
+Then, clone this repository and run the following command in your terminal:
 ```
-sudo slcand -o -s8 -F ttyUSB0
+uv sync
 ```
 
-## Python CAN
-
-Install the python-can module with the CANalyst-II driver:
+To use the CANalyst-II device, you need to add a rule to grant USB permissions. To do so, copy the 99-canalyst.rules file provided to 
+the `/etc/udev/rules.d/` directory:
 ```
-pip install "python-can[canalystii]"
-```
-
-Add a rule to grant USB permissions:
-```
-sudo touch /etc/udev/rules.d/99-canalyst.rules
+sudo cp 99-canalyst.rules /etc/udev/rules.d/.
 ```
 
-Then edit the rule using nano:
-```
-sudo nano /etc/udev/rules.d
-```
+## List of commands
 
-Write `SUBSYSTEM=="usb", ATTRS{idVendor}=="04d8", MODE="0666"`, save using Ctrl+O and exit with Ctrl+X.
-
---------------------------------------------
-
-```
-sudo modprobe usbserial vendor=0x04d8 product=0x0053
-sudo slcand -o -c -s8 /dev/ttyUSB0 can0
-sudo ip link set can0 up
-sudo ip link set can0 txqueuelen 1000
-```
+TODO
 
 # Images
 
