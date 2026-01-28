@@ -135,6 +135,22 @@ class RMDMotor:
         """Sets a new motor ID (Command 0x79)."""
         self._send([0x79, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, new_id])
     
+    def write_acceleration(self, value: int, pos_acc: bool=True, pos_dec: bool=True, vel_acc: bool=True, vel_dec: bool=True):
+        """Writes the acceleration setting to the motor RAM and ROM (Command 0x43)."""
+        value_bytes = value.to_bytes(4, byteorder='little', signed=False)
+        if pos_acc:
+            self._send([0x43, 0x00, 0x00, 0x00] + list(value_bytes))
+            time.sleep(0.1)
+        if pos_dec:
+            self._send([0x43, 0x01, 0x00, 0x00] + list(value_bytes))
+            time.sleep(0.1)
+        if vel_acc:
+            self._send([0x43, 0x02, 0x00, 0x00] + list(value_bytes))
+            time.sleep(0.1)
+        if vel_dec:
+            self._send([0x43, 0x03, 0x00, 0x00] + list(value_bytes))
+            time.sleep(0.1)
+            
     def write_pid(self, cur_kp: int=0, cur_ki: int=0, vel_kp: int=0, vel_ki: int=0, pos_kp: int=0, pos_ki: int=0, to_rom: bool=True):
         """Writes position proportional gain Kp to non-volatile ROM (Command 0x32) or volatile RAM (Command 0x31)."""
         cmd = 0x32 if to_rom else 0x31
