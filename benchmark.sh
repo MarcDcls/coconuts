@@ -6,9 +6,4 @@
 
 #     http://www.apache.org/licenses/LICENSE-2.0
 
-if [ "$#" -lt 2 ]; then
-    echo "Usage: $0 <filter_value> <motor_ids>"
-    exit 1
-fi
-
-uv run software/set_filter.py "$@"
+uv run software/benchmark.py "$@"

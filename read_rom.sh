@@ -6,9 +6,9 @@
 
 #     http://www.apache.org/licenses/LICENSE-2.0
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -eq 0 ]; then
     echo "Usage: $0 <motor_ids>"
     exit 1
 fi
 
-uv run python software/read_rom.py "$@"
+uv run software/read_rom.py "$@"

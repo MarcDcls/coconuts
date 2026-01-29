@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import time
 import argparse
 
-DT = 0.020  # Not working under 0.02 with motors
+DT = 0.02  # Not working under 0.02 with motors
 JOINT_SIGNS = {"knee_joint": -1.0, "ankle_joint": 1.0}
 MOTOR_SIGNS = {"knee_motor": -1.0, "ankle_motor": -1.0}
 MOTOR_IDS = {"knee_motor": 1, "ankle_motor": 2}
@@ -21,7 +21,7 @@ MOTOR_IDS = {"knee_motor": 1, "ankle_motor": 2}
 parser = argparse.ArgumentParser(description="Benchmark robot simulation.")
 parser.add_argument("--plot", action="store_true", help="Plot the results instead of running the simulation.")
 parser.add_argument("--send", action="store_true", help="Send commands to real motors instead of running the simulation.")
-parser.add_argument("--duration", type=float, default=2*np.pi, help="Duration of the benchmark in seconds.")
+parser.add_argument("--duration", type=float, default=4*np.pi, help="Duration of the benchmark in seconds.")
 parser.add_argument("--knee_only", action="store_true", help="Control only the knee motor.")
 parser.add_argument("--ankle_only", action="store_true", help="Control only the ankle motor.")
 parser.add_argument("--zero", action="store_true", help="Set current position as zero for all motors.")
@@ -67,7 +67,7 @@ while t < args.duration:
     t += DT
     step_start = time.perf_counter()
 
-    knee_target = np.sin(2*t - np.pi/2) * 0.5 + 0.5
+    knee_target = np.sin(2*t - np.pi/2) * 0.85 + 0.85
     ankle_target = np.sin(2*t) * 0.7
 
     if args.knee_only:
@@ -113,7 +113,7 @@ if args.send:
     print("Sending commands to real motors...")
     import can
     import can.interfaces.canalystii as canalystii
-    from software.rmd_motor import BITRATE, RMDMotor, RMDListener
+    from rmd_motor import BITRATE, RMDMotor, RMDListener
 
     with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE, receive_own_messages=False) as bus:
         motors = {}
@@ -154,6 +154,7 @@ if args.send:
             # Plot results
             for id, state in states.items():
                 state = np.array(state)
+                state[np.abs(state[:, 1]) < 1e-3, 1] = 0 # Remove noise around zero
                 plt.figure()
                 plt.title(f"Motor ID {id} Position Tracking")
                 plt.plot(state[:,0], state[:,1], label="Target Position", linestyle='--')

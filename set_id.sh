@@ -11,4 +11,4 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-uv run python software/set_id.py "$@"
+uv run software/set_id.py "$@"

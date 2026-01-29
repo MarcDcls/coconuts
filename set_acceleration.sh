@@ -11,4 +11,4 @@ if [ "$#" -lt 2 ]; then
     exit 1
 fi
 
-uv run python software/set_acceleration.py "$@"
+uv run software/set_acceleration.py "$@"

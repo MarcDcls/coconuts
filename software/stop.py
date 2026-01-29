@@ -7,7 +7,7 @@
 #     http://www.apache.org/licenses/LICENSE-2.0
 
 import can.interfaces.canalystii as canalystii
-from software.rmd_motor import BITRATE, RMDMotorBroadcast
+from rmd_motor import BITRATE, RMDMotorBroadcast
 import time
 
 with canalystii.CANalystIIBus(channel=0, bitrate=BITRATE) as bus:

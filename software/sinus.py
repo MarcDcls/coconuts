@@ -8,7 +8,7 @@
 
 import can
 import can.interfaces.canalystii as canalystii
-from software.rmd_motor import BITRATE, RMDMotor, RMDListener
+from rmd_motor import BITRATE, RMDMotor, RMDListener
 import numpy as np
 import matplotlib.pyplot as plt
 import time
