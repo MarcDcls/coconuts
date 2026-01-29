@@ -33,6 +33,22 @@ TODO
 
 # Images
 
+<p align="center">
+  <img height="500px" alt="ankle" src="https://github.com/user-attachments/assets/c7d00547-16c4-4649-9c0b-2d2433ca8479" />
+  <img height="500px" alt="ankle_gif" src="https://github.com/user-attachments/assets/46627b9f-a138-459c-b790-17784022fee5" />
+<p\>
+
+
+<p align="center">
+  <img height="500px" alt="knee" src="https://github.com/user-attachments/assets/08262d12-0a1c-4662-aa13-9130761fcb2a" />
+  <img height="500px" alt="knee_gif" src="https://github.com/user-attachments/assets/2d6a13b7-a184-4975-9187-b6cd73e4122b" />
+<p\>
+
+<p align="center">
+  <img height="500px" alt="both" src="https://github.com/user-attachments/assets/ed2c4a98-9103-4c32-ad8e-4702f33a26f0" />
+  <img height="500px" alt="both_gif" src="https://github.com/user-attachments/assets/77848361-197f-4186-b5b8-0a61ff626a13" />
+<p\>
+
 <img width="1207" height="1129" alt="image" src="https://github.com/user-attachments/assets/401a6d02-42ea-4c93-8a95-2f7a77933976" />
 <img width="1336" height="794" alt="image" src="https://github.com/user-attachments/assets/2ac5253d-ad15-4d6a-8d11-d881b6dfe14e" />
 
