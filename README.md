@@ -12,6 +12,19 @@ The CAD of the CocoNuts platform is open-source and available under the CERN-OHL
 
 The software provided is distributed under the Apache-2.0 license and is implemented in Python, which is not adapted for real-time control, but allows to easily set up and test the servomotors and the mechanical design. 
 
+## Mechanical Design
+
+The CocoNuts humanoid platform is designed to minimize leg inertia by relocating the mass of the actuators closer to the body. This is achieved using timing belts at the output of the RMD-X6 motors 
+to place the knee and ankle pitch motors near the hip joint:
+
+<img height="400px" alt="image" src="https://github.com/user-attachments/assets/401a6d02-42ea-4c93-8a95-2f7a77933976" />
+<img height="400px" alt="image" src="https://github.com/user-attachments/assets/2ac5253d-ad15-4d6a-8d11-d881b6dfe14e" />
+
+The transmission of ankle pitch motion is then achieved using a four-bar parallel linkage mechanism:
+
+<img height="450px" alt="image" src="https://github.com/user-attachments/assets/1bb45d46-6496-4f9d-9dc8-e4c168c15ec8" />
+<img height="450px" alt="image" src="https://github.com/user-attachments/assets/63a41d52-8d3c-4607-9072-feea86809b89" />
+
 ## Project Status
 
 The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. The experiments provided critical insights into the platform's design:
@@ -55,11 +68,6 @@ The commands are implemented in the `software/rmd_motor.py` file, which can also
 
 The one leg benchmark presented [here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/362dba3e9b9b20be3e7fcf95?renderMode=0&uiState=697cc782d1e0a249bcf6a2b6) can be controlled using the `benchmark.sh` script. The script runs a series of trajectories to test the performance of the leg design. By default, the benchmark runs these trajectories in a meshcat visualizer to verify the motion of the leg before running it physically.
 
-<p align="center">
-  <img height="500px" alt="side" src="https://github.com/user-attachments/assets/670382e0-5b16-49f1-a0da-d174fdbad3cc" />
-  <img height="500px" alt="front" src="https://github.com/user-attachments/assets/468604bf-aac2-4643-8453-3a27cea17485" />
-<p\>
-
 Prior to running the benchmark on the real hardware, make sure to set up the motors by:
 - Setting the knee motor ID to 1 and the ankle motor ID to 2 using the `set_id.sh` script.
 - Deactivating the CAN filters for both motors using the command `./set_filter.sh 0 1 2`.
@@ -99,10 +107,9 @@ By default the trajectory consists of a sinusoidal motion of both the knee and a
   <img height="400px" alt="both_gif" src="https://github.com/user-attachments/assets/77848361-197f-4186-b5b8-0a61ff626a13" />
 <p\>
 
-# Images
+---
 
-<img width="49%" alt="image" src="https://github.com/user-attachments/assets/401a6d02-42ea-4c93-8a95-2f7a77933976" />
-<img width="49%" alt="image" src="https://github.com/user-attachments/assets/2ac5253d-ad15-4d6a-8d11-d881b6dfe14e" />
-
-<img height="450px" alt="image" src="https://github.com/user-attachments/assets/1bb45d46-6496-4f9d-9dc8-e4c168c15ec8" />
-<img height="450px" alt="image" src="https://github.com/user-attachments/assets/63a41d52-8d3c-4607-9072-feea86809b89" />
+<p align="center">
+  <img height="500px" alt="side" src="https://github.com/user-attachments/assets/670382e0-5b16-49f1-a0da-d174fdbad3cc" />
+  <img height="500px" alt="front" src="https://github.com/user-attachments/assets/468604bf-aac2-4643-8453-3a27cea17485" />
+<p\>
