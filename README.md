@@ -5,8 +5,6 @@
 
 This repository contains the hardware design of the CocoNuts humanoid platform and the software to operate it with a CANalyst-II interface. 
 
-It is currently under development and marked as a work in progress.
-
 <p align="center">
   <img width="50%" alt="image" src="https://github.com/user-attachments/assets/c196ff6f-5483-44ac-a44b-0cd585367477" />
 </p>
@@ -27,9 +25,24 @@ the `/etc/udev/rules.d/` directory:
 sudo cp 99-canalyst.rules /etc/udev/rules.d/.
 ```
 
-## List of commands
+## List of motor commands
 
-TODO
+Several scripts are provided to set up the RMD-X6 servomotors. The available commands are:
+- `./set_id.sh <new_id>`: Set the ID of the connected servomotor to `<new_id>`.
+- `./ping.sh <ids>`: Ping the list of `<ids>` to check if the servomotors are connected.
+- `./set_zeros.sh`: Set the current position of all servomotors as their zero position in their ROM.
+- `./stop.sh`: Stop and release all servomotors.
+- `./state.sh <ids>`: Display the state (temperature, position, velocity, current, last timestep of reading) of the servomotors in the list of `<ids>`.
+- `./set_filter.sh <bool> <ids>`: Set the CAN filter to enable (`<bool>` = 1) or disable (`<bool>` = 0) filtering for the list of `<ids>`. 
+- `./set_acceleration.sh <acceleration> <ids>`: Set the maximum acceleration/deceleration for the velocity and position control modes of the servomotors in the list of `<ids>` to `<acceleration>`. Setting `<acceleration>` to 0 disables the acceleration limit and the acceleration follow the default profile of the servomotor.
+- `./set_pid.sh <id> <kp> <ki>`: Set the Kp and Ki gains of the servomotor `<id>` to `<kp>` and `<ki>`.
+- `./read_rom.sh <ids>`: Display the ROM parameters (acc/dec of the control modes, PID gains) of the servomotors in the list of `<ids>`.
+
+The commands are implemented in the `software/rmd_motor.py` file, which can also be imported as a module in your own Python scripts to write custom motor scripts.
+
+## One leg benchmark
+
+A one leg benchmark has been built to test the performance of the CocoNuts platform.
 
 # Images
 
