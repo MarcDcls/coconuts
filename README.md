@@ -8,7 +8,7 @@
 The **CocoNuts project** is an open-source humanoid robotics research platform. Its primary design philosophy is the **minimization of leg inertia** by concentrating mass near the root of the limbs, utilizing a combination of timing belts and parallel linkage mechanisms. This repository contains the hardware design of the CocoNuts humanoid platform and the software to operate it with a CANalyst-II interface.
 
 The CAD of the CocoNuts platform is open-source and available under the CERN-OHL-S-2.0 license 
-[here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/6f8aa33372eceae3daea128b). The motors used in the robot are RMD-X6 QDD actuators and TD30-40 and TD40-52 harmonic drive actuators.
+[here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/6f8aa33372eceae3daea128b?renderMode=0&uiState=697cc782d1e0a249bcf6a2b6). The motors used in the robot are RMD-X6 QDD actuators and TD30-40 and TD40-52 harmonic drive actuators.
 
 The software provided is distributed under the Apache-2.0 license and is implemented in Python, which is not adapted for real-time control, but allows to easily set up and test the servomotors and the mechanical design. 
 
@@ -53,7 +53,7 @@ The commands are implemented in the `software/rmd_motor.py` file, which can also
 
 ## One leg benchmark
 
-The one leg benchmark presented [here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/362dba3e9b9b20be3e7fcf95) can be controlled using the `benchmark.sh` script. The script runs a series of trajectories to test the performance of the leg design. By default, the benchmark runs these trajectories in a meshcat visualizer to verify the motion of the leg before running it physically.
+The one leg benchmark presented [here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/362dba3e9b9b20be3e7fcf95?renderMode=0&uiState=697cc782d1e0a249bcf6a2b6) can be controlled using the `benchmark.sh` script. The script runs a series of trajectories to test the performance of the leg design. By default, the benchmark runs these trajectories in a meshcat visualizer to verify the motion of the leg before running it physically.
 
 <p align="center">
   <img height="500px" alt="side" src="https://github.com/user-attachments/assets/670382e0-5b16-49f1-a0da-d174fdbad3cc" />
