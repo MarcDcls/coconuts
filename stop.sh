@@ -6,4 +6,4 @@
 
 #     http://www.apache.org/licenses/LICENSE-2.0
 
-uv run software/set_zeros.py
+uv run software/stop.py
