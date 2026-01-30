@@ -31,7 +31,7 @@ The transmission of ankle pitch motion is then achieved using a four-bar paralle
   
 ## Simplified One Leg Benchmark
 
-The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. Example trajectories were run on the leg to assess its capabilities in three configurations: ankle only actuation, knee only actuation, and both knee and ankle actuation.
+The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. The CAD of this prototype is available [here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/362dba3e9b9b20be3e7fcf95?renderMode=0&uiState=697cc782d1e0a249bcf6a2b6). Example trajectories were run on the leg to assess its capabilities in three configurations: ankle only actuation, knee only actuation, and both knee and ankle actuation.
 
 <p align="center">
   <img height="400px" alt="ankle" src="https://github.com/user-attachments/assets/c7d00547-16c4-4649-9c0b-2d2433ca8479" />
@@ -49,8 +49,8 @@ The prototype of a one leg benchmark of the CocoNuts platform was built to evalu
 <p\>
 
 The experiments provided critical insights into the platform's design:
-- Actuator Mismatch: The RMD-X6 motors proved to be oversized for the current scale of the leg. Their high torque capability is offset by their weight, resulting in an unfavorable power-to-weight ratio for this specific frame. This suggests that the design would be more efficient either with a larger structural scale or with lighter, more compact actuators.
-- Mechanical Complexity: The timing belt and parallel linkage system, while successful in shifting mass towards the body, introduced significant compliance and mechanical play. In the current iteration, these factors outweighed the benefits of reduced leg inertia.
+- **Actuator Mismatch**: The RMD-X6 motors proved to be oversized for the current scale of the leg. Their high torque capability is offset by their weight, resulting in an unfavorable power-to-weight ratio for this specific frame. This suggests that the design would be more efficient either with a larger structural scale or with lighter, more compact actuators.
+- **Mechanical Complexity**: The timing belt and parallel linkage system, while successful in shifting mass towards the body, introduced significant compliance and mechanical play. This complexity led to challenges in achieving precise control.
 
 These findings indicate that a major architectural pivot is required to better align the actuation power with the mechanical structure. As a result, the project is currently on hold and I am maintaining this repository as an open-access technical reference for the robotics community.
 
@@ -91,7 +91,7 @@ The commands are implemented in the `software/rmd_motor.py` file, which can also
 
 ## One leg benchmark
 
-The one leg benchmark presented [here](https://cad.onshape.com/documents/326c7618f048bbd5c9f71f42/v/8ddbb93e8d16fabe401f72ed/e/362dba3e9b9b20be3e7fcf95?renderMode=0&uiState=697cc782d1e0a249bcf6a2b6) can be controlled using the `benchmark.sh` script. The script runs a series of trajectories to test the performance of the leg design. By default, the benchmark runs these trajectories in a meshcat visualizer to verify the motion of the leg before running it physically.
+The one leg benchmark can be controlled using the `benchmark.sh` script. The script runs a series of trajectories to test the performance of the leg design. By default, the benchmark runs these trajectories in a meshcat visualizer to verify the motion of the leg before running it physically.
 
 Prior to running the benchmark on the real hardware, make sure to set up the motors by:
 - Setting the knee motor ID to 1 and the ankle motor ID to 2 using the `set_id.sh` script.
