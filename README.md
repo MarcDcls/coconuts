@@ -29,13 +29,34 @@ The transmission of ankle pitch motion is then achieved using a four-bar paralle
   <img height="450px" alt="image" src="https://github.com/user-attachments/assets/63a41d52-8d3c-4607-9072-feea86809b89" />
 <p\>
   
-## Project Status
+## Simplified One Leg Benchmark
 
-The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. The experiments provided critical insights into the platform's design:
+The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. Example trajectories were run on the leg to assess its capabilities in three configurations: ankle only actuation, knee only actuation, and both knee and ankle actuation.
+
+<p align="center">
+  <img height="400px" alt="ankle" src="https://github.com/user-attachments/assets/c7d00547-16c4-4649-9c0b-2d2433ca8479" />
+  <img height="400px" alt="ankle_gif" src="https://github.com/user-attachments/assets/46627b9f-a138-459c-b790-17784022fee5" />
+<p\>
+
+<p align="center">
+  <img height="400px" alt="knee" src="https://github.com/user-attachments/assets/08262d12-0a1c-4662-aa13-9130761fcb2a" />
+  <img height="400px" alt="knee_gif" src="https://github.com/user-attachments/assets/2d6a13b7-a184-4975-9187-b6cd73e4122b" />
+<p\>
+
+<p align="center">
+  <img height="400px" alt="both" src="https://github.com/user-attachments/assets/ed2c4a98-9103-4c32-ad8e-4702f33a26f0" />
+  <img height="400px" alt="both_gif" src="https://github.com/user-attachments/assets/77848361-197f-4186-b5b8-0a61ff626a13" />
+<p\>
+
+The experiments provided critical insights into the platform's design:
 - Actuator Mismatch: The RMD-X6 motors proved to be oversized for the current scale of the leg. Their high torque capability is offset by their weight, resulting in an unfavorable power-to-weight ratio for this specific frame. This suggests that the design would be more efficient either with a larger structural scale or with lighter, more compact actuators.
 - Mechanical Complexity: The timing belt and parallel linkage system, while successful in shifting mass towards the body, introduced significant compliance and mechanical play. In the current iteration, these factors outweighed the benefits of reduced leg inertia.
 
 These findings indicate that a major architectural pivot is required to better align the actuation power with the mechanical structure. As a result, the project is currently on hold and I am maintaining this repository as an open-access technical reference for the robotics community.
+
+# Control Software 
+
+This part of the repository contains the software to operate the RMD-X6 servomotors using a CANalyst-II interface. The software is implemented in Python and allows to set up and test the servomotors.
 
 ## Install
 
@@ -92,28 +113,3 @@ where `<option>` can be:
 - `--zero`: Run a zero position trajectory.
 
 By default the trajectory consists of a sinusoidal motion of both the knee and ankle motors with a duration of 4 * pi seconds.
-
-## Results
-
-<p align="center">
-  <img height="400px" alt="ankle" src="https://github.com/user-attachments/assets/c7d00547-16c4-4649-9c0b-2d2433ca8479" />
-  <img height="400px" alt="ankle_gif" src="https://github.com/user-attachments/assets/46627b9f-a138-459c-b790-17784022fee5" />
-<p\>
-
-
-<p align="center">
-  <img height="400px" alt="knee" src="https://github.com/user-attachments/assets/08262d12-0a1c-4662-aa13-9130761fcb2a" />
-  <img height="400px" alt="knee_gif" src="https://github.com/user-attachments/assets/2d6a13b7-a184-4975-9187-b6cd73e4122b" />
-<p\>
-
-<p align="center">
-  <img height="400px" alt="both" src="https://github.com/user-attachments/assets/ed2c4a98-9103-4c32-ad8e-4702f33a26f0" />
-  <img height="400px" alt="both_gif" src="https://github.com/user-attachments/assets/77848361-197f-4186-b5b8-0a61ff626a13" />
-<p\>
-
----
-
-<p align="center">
-  <img height="500px" alt="side" src="https://github.com/user-attachments/assets/670382e0-5b16-49f1-a0da-d174fdbad3cc" />
-  <img height="500px" alt="front" src="https://github.com/user-attachments/assets/468604bf-aac2-4643-8453-3a27cea17485" />
-<p\>
