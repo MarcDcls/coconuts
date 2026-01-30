@@ -44,6 +44,11 @@ The commands are implemented in the `software/rmd_motor.py` file, which can also
 
 A one leg benchmark has been built to test the performance of the CocoNuts platform.
 
+<p align="center">
+  <img height="500px" alt="side" src="https://github.com/user-attachments/assets/670382e0-5b16-49f1-a0da-d174fdbad3cc" />
+  <img height="500px" alt="front" src="https://github.com/user-attachments/assets/468604bf-aac2-4643-8453-3a27cea17485" />
+<p\>
+  
 # Images
 
 <p align="center">
