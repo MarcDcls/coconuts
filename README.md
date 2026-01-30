@@ -17,14 +17,18 @@ The software provided is distributed under the Apache-2.0 license and is impleme
 The CocoNuts humanoid platform is designed to minimize leg inertia by relocating the mass of the actuators closer to the body. This is achieved using timing belts at the output of the RMD-X6 motors 
 to place the knee and ankle pitch motors near the hip joint:
 
-<img height="400px" alt="image" src="https://github.com/user-attachments/assets/401a6d02-42ea-4c93-8a95-2f7a77933976" />
-<img height="400px" alt="image" src="https://github.com/user-attachments/assets/2ac5253d-ad15-4d6a-8d11-d881b6dfe14e" />
-
+<p align="center">
+  <img height="290px" alt="image" src="https://github.com/user-attachments/assets/401a6d02-42ea-4c93-8a95-2f7a77933976" />
+  <img height="290px" alt="image" src="https://github.com/user-attachments/assets/2ac5253d-ad15-4d6a-8d11-d881b6dfe14e" />
+<p\>
+  
 The transmission of ankle pitch motion is then achieved using a four-bar parallel linkage mechanism:
 
-<img height="450px" alt="image" src="https://github.com/user-attachments/assets/1bb45d46-6496-4f9d-9dc8-e4c168c15ec8" />
-<img height="450px" alt="image" src="https://github.com/user-attachments/assets/63a41d52-8d3c-4607-9072-feea86809b89" />
-
+<p align="center">
+  <img height="450px" alt="image" src="https://github.com/user-attachments/assets/1bb45d46-6496-4f9d-9dc8-e4c168c15ec8" />
+  <img height="450px" alt="image" src="https://github.com/user-attachments/assets/63a41d52-8d3c-4607-9072-feea86809b89" />
+<p\>
+  
 ## Project Status
 
 The prototype of a one leg benchmark of the CocoNuts platform was built to evaluate the performance of the design concept. The experiments provided critical insights into the platform's design:
