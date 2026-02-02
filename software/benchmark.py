@@ -7,7 +7,7 @@
 #     http://www.apache.org/licenses/LICENSE-2.0
 
 import placo
-from placo_utils.visualization import robot_viz, frame_viz, point_viz, robot_frame_viz, arrow_viz, tf, contacts_viz
+from placo_utils.visualization import robot_viz
 import numpy as np
 import matplotlib.pyplot as plt
 import time
