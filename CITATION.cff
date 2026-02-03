@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Duclusaud"
+    given-names: "Marc"
+    orcid: "https://orcid.org/0009-0006-9206-9188"
+title: "CocoNuts: An open-source humanoid robotics platform minimizing leg inertia"
+version: 1.0.0
+doi: 10.5281/zenodo.18470949
+date-released: 2026-02-03
+url: "https://github.com/MarcDcls/coconuts"

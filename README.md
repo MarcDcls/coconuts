@@ -4,6 +4,7 @@
 
 [![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue.svg)](LICENSE)
 [![License: Apache-2.0](https://img.shields.io/badge/Software-Apache--2.0-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1134999394.svg)](https://doi.org/10.5281/zenodo.18470949)
 
 The **CocoNuts project** is an open-source humanoid robotics research platform. Its primary design philosophy is the **minimization of leg inertia** by concentrating mass near the root of the limbs, utilizing a combination of timing belts and parallel linkage mechanisms. This repository contains the hardware design of the CocoNuts humanoid platform and the software to operate it with a CANalyst-II interface.
 
@@ -113,3 +114,18 @@ where `<option>` can be:
 - `--zero`: Run a zero position trajectory.
 
 By default the trajectory consists of a sinusoidal motion of both the knee and ankle motors with a duration of 4 * pi seconds.
+
+# Citation
+
+To cite this repository in your publications:
+```bibtex
+@software{mduclusaud-coconuts,
+    author = {Duclusaud, Marc},
+    doi = {10.5281/zenodo.18470949},
+    month = feb,
+    title = {{CocoNuts: An open-source humanoid robotics platform minimizing leg inertia}},
+    url = {https://github.com/MarcDcls/coconuts},
+    version = {1.0.0},
+    year = {2026}
+}
+```
