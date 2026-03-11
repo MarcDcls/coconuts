@@ -125,6 +125,7 @@ To cite this repository in your publications:
     month = feb,
     title = {{CocoNuts: An open-source humanoid robotics platform minimizing leg inertia}},
     url = {https://github.com/MarcDcls/coconuts},
+    howpublished = "\url{https://github.com/MarcDcls/coconuts}",
     version = {1.0.0},
     year = {2026}
 }
